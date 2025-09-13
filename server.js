@@ -17,6 +17,11 @@ const expressLayouts = require("express-ejs-layouts")
  *************************/
 app.use(static)
 
+//**index route */
+app.get('/',function(req,res){
+  res.render('index', {title: 'Home'})
+})
+
 /* ***********************
  * View Engine and Templates
  *************************/
