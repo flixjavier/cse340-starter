@@ -122,7 +122,7 @@ h1{
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 350px;
-  background: url('/images/vehicles/delorean.jpg') center/cover no-repeat;
+  background: url('/images/vehicles/delorean.jpg') center no-repeat;
   background-size: contain;
   border-radius: 10px;
   margin: 2em 0;
