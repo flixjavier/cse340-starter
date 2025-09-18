@@ -4,3 +4,269 @@
 *:after {
   box-sizing: border-box;
 }
+
+/******* Variables ***************/
+:root {
+  --primary-color: #242332;
+  --secondary-color: #28B9DB;
+  --thirty-color: white;
+  --font-color: black;
+  --font-family: 'Arial', sans-serif; 
+  --secondary-font-family: 'Times New Roman', serif; 
+}
+
+/******* Global Styles ***************/
+body {
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  background-image: url(../images/site/checkerboard.jpg); 
+  background-size: auto;
+  background-position: center;
+}
+
+/******* wrapper ***************/
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 1em;
+  background-color: var(--thirty-color);
+  border: 5px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/******* Header ***************/
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.siteName {
+  font-size: 2em;
+  color: var(--primary-color);
+  font-family: var(--font-family); 
+}
+
+.siteName a {
+  text-decoration: none;
+  color: inherit;
+}
+#tools {
+  font-family: var(--font-family); 
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+#tools a {
+  font-size: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+
+/******* Navigation ***************/
+nav {
+  background-color: black;
+  border-radius: 2px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap; 
+}
+
+nav li {
+  flex: 1 1 100px; 
+  text-align: center;
+  padding: 0.5em 1em;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--thirty-color);
+}
+nav li:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/******* Footer ***************/
+footer {
+  font-family: var(--font-family);
+  text-align: center;
+  margin-top: auto;
+  padding: 1em 0;
+  font-size: 1em;
+  color: var(--font-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+/******* Main Content Area ***************/
+h1{
+  font-family: var(--secondary-font-family);
+  color: var(--primary-color);
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 350px;
+  background: url('/images/vehicles/delorean.jpg') center/cover no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+  margin: 2em 0;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.hero-container .hero-image {
+  display: none; 
+}
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-text h1 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+  font-family: var(--font-family);
+  margin-bottom: 2em;
+  margin-top: 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-text section {
+  background: rgba(255,255,255,0.85);
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 350px;
+  margin-left: 0;
+  margin-top: 0;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--secondary-color);
+}
+
+.hero-text section h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-family: var(--font-family);
+}
+.hero-text section p {
+  margin: 0.25em 0;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  font-size: large;
+}
+
+.hero-btn {
+  margin-top: 1em;
+  padding: 0.75em 2em;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: background 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-color);
+}
+
+/******* Upgrades and Reviews Section ***************/
+
+.delorean-info-container {
+  display: flex;
+  gap: 2em;
+  margin: 2em 0;
+  flex-wrap: wrap;
+}
+
+.delorean-upgrades, .delorean-reviews {
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex: 1 1 300px;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+}
+
+.upgrade-cards {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+
+.delorean-reviews ul {
+  margin-top: 1em;
+  padding-left: 1.2em;
+}
+
+.delorean-reviews li {
+  margin-bottom: 1em;
+  font-family: var(--secondary-font-family);
+}
+
+/******* Responsive Design ***************/
+@media screen and (max-width: 750px) {
+  body{
+    background-image: url(../images/site/small_check.png);
+  }
+
+  .hero-container {
+    background: url('/images/vehicles/delorean-tn.jpg') center/contain no-repeat;
+    min-height: 60vw;
+    padding: 1em;
+  }
+  .delorean-info-container {
+    flex-direction: column;
+  }
+
+  .delorean-reviews {
+    order: 1;
+  }
+
+  .delorean-upgrades {
+    order: 2;
+  }
+}
