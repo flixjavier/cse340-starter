@@ -96,6 +96,12 @@ nav li:hover {
   cursor: pointer;
 }
 
+nav a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 /******* Footer ***************/
 footer {
   font-family: var(--font-family);
