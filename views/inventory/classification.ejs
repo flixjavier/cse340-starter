@@ -1,0 +1,15 @@
+<% 
+// If a title variable exists, display it as an h1
+if (title) { 
+%>
+  <h1><%= title %></h1>
+<% 
+// If no title, redirect to the home page
+} else { 
+  res.redirect('/')
+} 
+%>
+
+<%# messages() %>
+
+<%- grid %>
